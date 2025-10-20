@@ -1,0 +1,40 @@
+const menu = document.getElementById("menu-aberto")
+const Herald_Of = document.getElementById("Herald_of")
+const darkness = document.getElementById("Darkness")
+
+function menu_mostre(){
+    menu.style.display = "block";
+    console.log("O menu apareceu.")
+}
+function menu_desaparecer(){
+    menu.style.display = "none";
+    console.log("O menu desapareceu.")
+}
+function modo_claro(){
+    Herald_Of.style.display = "none";
+    darkness.style.display = "block"
+    document.querySelectorAll("span").forEach(Element => { Element.style.color = "#0d8d0d" })
+    document.querySelector("main").style.backgroundColor = "#f2f2f2"
+    document.getElementById("titulo-main").style.color = "#0d8d0d"
+    document.querySelector("p").style.color = "#000"
+    console.log("The Herald of Darkness")
+}
+function modo_escuro(){
+    darkness.style.display =  "none";
+    Herald_Of.style.display = "block"
+    document.querySelectorAll("span").forEach(Element => { Element.style.color = "#723272" })
+    document.querySelector("main").style.backgroundColor = "#121212"
+    document.getElementById("titulo-main").style.color = "#723272"
+    document.querySelector("p").style.color = "#ffffff"
+    console.log("I'll show you")
+}
+/*
+O que é necessário fazer/alterar/observar no/do modo escuro. Ou ordem de itens cruciais para o modo escuro:
+    class especificidades
+    botao para o modo escuro
+    class especificidades 2x
+    main
+    id titulo-main
+    class textos
+    Tudo acima foi resolvido :3
+*/
