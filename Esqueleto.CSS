@@ -1,4 +1,3 @@
-/*Necessidades globais*/
 *{
     box-sizing: border-box;
     padding: 0;
@@ -56,8 +55,8 @@
     cursor: pointer;
 }
 #fecha-menu-img{
-    width: 20%;
-    height: 20%;
+    width: 45%;
+    height: 65%;
 }
 .links-menu{
     font-family: 'Moserrat adapt';
@@ -256,8 +255,8 @@ h3{
     cursor: pointer;
 }
 #fecha-menu-img{
-    width: 20%;
-    height: 20%;
+    width: 45%;
+    height: 65%;
 }
 .links-menu{
     font-family: 'Moserrat adapt';
@@ -455,8 +454,8 @@ h3{
     cursor: pointer;
 }
 #fecha-menu-img{
-    width: 20%;
-    height: 20%;
+    width: 45%;
+    height: 65%;
 }
 .links-menu{
     font-family: 'Moserrat adapt';
@@ -651,8 +650,8 @@ footer{
     cursor: pointer;
 }
 #fecha-menu-img{
-    width: 20%;
-    height: 20%;
+    width: 45%;
+    height: 65%;
 }
 .links-menu{
     font-family: 'Moserrat adapt';
@@ -846,8 +845,8 @@ footer{
     cursor: pointer;
 }
 #fecha-menu-img{
-    width: 20%;
-    height: 20%;
+    width: 45%;
+    height: 65%;
 }
 .links-menu{
     font-family: 'Moserrat adapt';
