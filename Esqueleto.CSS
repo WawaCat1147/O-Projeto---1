@@ -1,0 +1,1230 @@
+/*Necessidades globais*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face{
+    font-family: 'Cinzel bold';
+    src: url(Cinzel-Bold.woff2)  format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Monserrat bold';
+    src: url(Montserrat-Bold.woff2)  format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Monserrat adapt';
+    src: url(Montserrat-VariableFont_wght.woff2)  format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (min-width: 0px) and (max-width: 359px)/*Eletrônicos pequenos*/{
+#menu-botao{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+.modos-botao{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#menu-aberto{
+    display: none;
+    position: fixed;
+    width: 200px;
+    right: 0;
+    background-color: #eef6b0;
+    height: 100%;
+    z-index: 10;
+}
+#menu-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+    gap: 25px;
+}
+#fecha-menu{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#fecha-menu-img{
+    width: 20%;
+    height: 20%;
+}
+.links-menu{
+    font-family: 'Moserrat adapt';
+    font-size: 150%;
+    text-align: center;
+    color: #222;
+    cursor: pointer;
+}
+#likeA-header{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+#logo{
+    height: 200%;
+}
+#logoEtitulo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    margin-left: 1%;
+    max-width: 300px;
+    color: white;
+    font-family: 'Cinzel bold';
+    font-size: 80%;
+    margin-right: 5%;
+}
+#likeA-nav{
+    display: flex;
+    gap: 60px;
+    margin-right: 60px;
+    display: none;
+}
+.links{
+    color: white;
+    font-family: 'Monserrat adapt';
+    font-size: 120%;
+    cursor: pointer;
+}
+section{
+    background-image: url(main-usina.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#intro-img{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#container-titulo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+#titulo{
+    display: flex;
+    color: white;
+    text-align: center;
+    font-family: 'Cinzel bold';
+    z-index: 2;
+    font-size: 225%;
+}
+span{
+    color: rgb(13, 141, 13);
+    margin-left: 3%;
+}
+#titulo-main{
+    text-align: center;
+    color: rgb(13, 141, 13);
+    font-family: 'Monserrat bold'; 
+    font-size: 300%;
+    margin-bottom: 1%;
+}
+.titulos{
+    text-align: center;
+    color: black;
+    font-family: 'Monserrat bold'; 
+    font-size: 300%;
+    margin-bottom: 1%;
+}
+p{
+    font-family: 'Monserrat adapt';
+    text-align: center;
+    color: black;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 100%;
+}
+main{
+    background-color: white;
+}
+.main-img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-top: 1.5%;
+    width: 60%;
+    height: 450px;
+    border-radius: 20px;
+}
+#main-articles{
+    height: 100%;
+    background-color: #3eb4899a;
+}
+#article-cont{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+article
+{
+    display: block;
+    background-color: #adebb3;
+    border-radius: 10px;
+    width: 250px;
+    height: 750px;
+    margin: 0 auto;
+    margin-top: 2.5%;
+    font-size: 80%;
+}
+.img-art{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+footer{
+    background-color: #222;
+    color: #fff;
+    font-family: 'Monserrat adapt';
+    padding-bottom: 1%;
+}
+#foo-container{ 
+    display: flex;
+} /*Foo-Fighters*/
+.foo-conteudo{
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+}
+h3{
+    font-size: 60%;
+}
+#foo-bottom::before{
+    background-color: #444;
+    content:"";
+    display:block;
+    height: 1px;
+    width:100%;
+    margin-bottom: 1%;
+}
+#foo-bottom{
+    text-align: center;
+    font-family: 'Monserrat adapt';
+}
+}
+
+@media (min-width: 360px) and (max-width: 599px)/*Celulares médios*/{
+#menu-botao{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+.modos-botao{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#menu-aberto{
+    display: none;
+    position: fixed;
+    width: 200px;
+    right: 0;
+    background-color: #eef6b0;
+    height: 100%;
+    z-index: 10;
+}
+#menu-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+    gap: 25px;
+}
+#fecha-menu{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#fecha-menu-img{
+    width: 20%;
+    height: 20%;
+}
+.links-menu{
+    font-family: 'Moserrat adapt';
+    font-size: 150%;
+    text-align: center;
+    color: #222;
+    cursor: pointer;
+}
+#likeA-header{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+#logo{
+    height: 200%;
+}
+#logoEtitulo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    margin-left: 1%;
+    max-width: 300px;
+    color: white;
+    font-family: 'Cinzel bold';
+    font-size: 80%;
+}
+#likeA-nav{
+    display: flex;
+    gap: 60px;
+    margin-right: 60px;
+    display: none;
+}
+.links{
+    color: white;
+    font-family: 'Monserrat adapt';
+    font-size: 120%;
+    cursor: pointer;
+}
+section{
+    background-image: url(main-usina.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#intro-img{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#container-titulo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+#titulo{
+    display: flex;
+    color: white;
+    text-align: center;
+    font-family: 'Cinzel bold';
+    z-index: 2;
+    font-size: 300%;
+}
+span{
+    color: rgb(13, 141, 13);
+    margin-left: 3%;
+}
+#titulo-main{
+    text-align: center;
+    color: rgb(13, 141, 13);
+    font-family: 'Monserrat bold'; 
+    font-size: 300%;
+    margin-bottom: 1%;
+}
+.titulos{
+    text-align: center;
+    color: black;
+    font-family: 'Monserrat bold'; 
+    font-size: 300%;
+    margin-bottom: 1%;
+}
+p{
+    font-family: 'Monserrat adapt';
+    text-align: center;
+    color: black;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 100%;
+}
+main{
+    background-color: white;
+}
+.main-img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-top: 1.5%;
+    width: 60%;
+    height: 450px;
+    border-radius: 20px;
+}
+#main-articles{
+    height: 100%;
+    background-color: #3eb4899a;
+}
+#article-cont{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+article
+{
+    display: block;
+    background-color: #adebb3;
+    border-radius: 10px;
+    width: 250px;
+    height: 750px;
+    margin: 0 auto;
+    margin-top: 2.5%;
+    font-size: 80%;
+}
+.img-art{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+footer{
+    background-color: #222;
+    color: #fff;
+    font-family: 'Monserrat adapt';
+    padding-bottom: 1%;
+}
+#foo-container{ 
+    display: flex;
+} /*Foo-Fighters*/
+.foo-conteudo{
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+}
+h3{
+    font-size: 90%;
+}
+#foo-bottom::before{
+    background-color: #444;
+    content:"";
+    display:block;
+    height: 1px;
+    width:100%;
+    margin-bottom: 1%;
+}
+#foo-bottom{
+    text-align: center;
+    font-family: 'Monserrat adapt';
+}
+}
+
+@media (min-width: 600px) and (max-width: 899px)/*Celularea maiores e pequenos tablets*/{
+#menu-botao{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+.modos-botao{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#menu-aberto{
+    display: none;
+    position: fixed;
+    width: 200px;
+    right: 0;
+    background-color: #eef6b0;
+    height: 100%;
+    z-index: 10;
+}
+#menu-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+    gap: 25px;
+}
+#fecha-menu{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#fecha-menu-img{
+    width: 20%;
+    height: 20%;
+}
+.links-menu{
+    font-family: 'Moserrat adapt';
+    font-size: 150%;
+    text-align: center;
+    color: #222;
+    cursor: pointer;
+}
+#likeA-header{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+#logo{
+    height: 200%;
+}
+#logoEtitulo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    margin-left: 1%;
+    max-width: 300px;
+    color: white;
+    font-family: 'Cinzel bold';
+    font-size: 80%;
+}
+#likeA-nav{
+    display: flex;
+    gap: 60px;
+    margin-right: 60px;
+    display: none;
+}
+.links{
+    color: white;
+    font-family: 'Monserrat adapt';
+    font-size: 120%;
+    cursor: pointer;
+}
+section{
+    background-image: url(main-usina.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#intro-img{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#container-titulo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+#titulo{
+    display: flex;
+    color: white;
+    text-align: center;
+    font-family: 'Cinzel bold';
+    z-index: 2;
+    font-size: 500%;
+}
+span{
+    color: rgb(13, 141, 13);
+    margin-left: 3%;
+}
+#titulo-main{
+    text-align: center;
+    color: rgb(13, 141, 13);
+    font-family: 'Monserrat bold'; 
+    font-size: 300%;
+    margin-bottom: 1%;
+}
+.titulos{
+    text-align: center;
+    color: black;
+    font-family: 'Monserrat bold'; 
+    font-size: 300%;
+    margin-bottom: 1%;
+}
+p{
+    font-family: 'Monserrat adapt';
+    text-align: center;
+    color: black;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 125%;
+}
+main{
+    background-color: white;
+}
+.main-img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-top: 1.5%;
+    width: 60%;
+    height: 450px;
+    border-radius: 20px;
+}
+#main-articles{
+    height: 100%;
+    background-color: #3eb4899a;
+}
+#article-cont{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+article
+{
+    display: block;
+    background-color: #adebb3;
+    border-radius: 10px;
+    width: 425px;
+    height: 750px;
+    margin: 0 auto;
+    margin-top: 2.5%;
+    font-size: 90%;
+}
+.img-art{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+footer{
+    background-color: #222;
+    color: #fff;
+    font-family: 'Monserrat adapt';
+    padding-bottom: 1%;
+}
+#foo-container{ 
+    display: flex;
+} /*Foo-Fighters*/
+.foo-conteudo{
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+}
+#foo-bottom::before{
+    background-color: #444;
+    content:"";
+    display:block;
+    height: 1px;
+    width:100%;
+    margin-bottom: 1%;
+}
+#foo-bottom{
+    text-align: center;
+    font-family: 'Monserrat adapt';
+}
+}
+
+@media (min-width: 900px) and (max-width: 1199px)/*Tablets na horizontal e pequenos laptops*/{
+#menu-botao{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+.modos-botao{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#menu-aberto{
+    display: none;
+    position: fixed;
+    width: 200px;
+    right: 0;
+    background-color: #eef6b0;
+    height: 100%;
+    z-index: 10;
+}
+#menu-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+    gap: 25px;
+}
+#fecha-menu{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#fecha-menu-img{
+    width: 20%;
+    height: 20%;
+}
+.links-menu{
+    font-family: 'Moserrat adapt';
+    font-size: 150%;
+    text-align: center;
+    color: #222;
+    cursor: pointer;
+}
+#likeA-header{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+#logo{
+    height: 200%;
+}
+#logoEtitulo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    margin-left: 1%;
+    max-width: 300px;
+    color: white;
+    font-family: 'Cinzel bold';
+    font-size: 80%;
+}
+#likeA-nav{
+    display: flex;
+    gap: 60px;
+    margin-right: 60px;
+}
+.links{
+    color: white;
+    font-family: 'Monserrat adapt';
+    font-size: 120%;
+    cursor: pointer;
+}
+section{
+    background-image: url(main-usina.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#intro-img{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#container-titulo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+#titulo{
+    display: flex;
+    color: white;
+    text-align: center;
+    font-family: 'Cinzel bold';
+    z-index: 2;
+    font-size: 625%;
+}
+span{
+    color: rgb(13, 141, 13);
+    margin-left: 3%;
+}
+#titulo-main{
+    text-align: center;
+    color: rgb(13, 141, 13);
+    font-family: 'Monserrat bold'; 
+    font-size: 300%;
+    margin-bottom: 1%;
+}
+.titulos{
+    text-align: center;
+    color: black;
+    font-family: 'Monserrat bold'; 
+    font-size: 300%;
+    margin-bottom: 1%;
+}
+p{
+    font-family: 'Monserrat adapt';
+    text-align: center;
+    color: black;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 125%;
+}
+main{
+    background-color: white;
+}
+.main-img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-top: 1.5%;
+    width: 60%;
+    height: 450px;
+    border-radius: 20px;
+}
+#main-articles{
+    height: 100%;
+    background-color: #3eb4899a;
+}
+#article-cont{
+    display: flex;
+}
+article
+{
+    display: block;
+    background-color: #adebb3;
+    border-radius: 10px;
+    width: 425px;
+    height: 750px;
+    margin: 0 auto;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    font-size: 90%;
+}
+.img-art{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+footer{
+    background-color: #222;
+    color: #fff;
+    font-family: 'Monserrat adapt';
+    padding-bottom: 1%;
+}
+#foo-container{ 
+    display: flex;
+} /*Foo-Fighters*/
+.foo-conteudo{
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+}
+#foo-bottom::before{
+    background-color: #444;
+    content:"";
+    display:block;
+    height: 1px;
+    width:100%;
+    margin-bottom: 1%;
+}
+#foo-bottom{
+    text-align: center;
+    font-family: 'Monserrat adapt';
+}
+}
+
+@media (min-width: 1200px)/*Desktops*/{
+#menu-botao{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+.modos-botao{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#menu-aberto{
+    display: none;
+    position: fixed;
+    width: 200px;
+    right: 0;
+    background-color: #eef6b0;
+    height: 100%;
+    z-index: 10;
+}
+#menu-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+    gap: 25px;
+}
+#fecha-menu{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#fecha-menu-img{
+    width: 20%;
+    height: 20%;
+}
+.links-menu{
+    font-family: 'Moserrat adapt';
+    font-size: 150%;
+    text-align: center;
+    color: #222;
+    cursor: pointer;
+}
+#likeA-header{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+#logo{
+    height: 200%;
+}
+#logoEtitulo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    margin-left: 1%;
+    max-width: 300px;
+    color: white;
+    font-family: 'Cinzel bold';
+}
+#likeA-nav{
+    display: flex;
+    gap: 60px;
+    margin-right: 60px;
+}
+.links{
+    color: white;
+    font-family: 'Monserrat adapt';
+    font-size: 120%;
+    cursor: pointer;
+}
+section{
+    background-image: url(main-usina.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#intro-img{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#container-titulo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+#titulo{
+    display: flex;
+    color: white;
+    text-align: center;
+    font-family: 'Cinzel bold';
+    z-index: 2;
+    font-size: 625%;
+}
+span{
+    color: rgb(13, 141, 13);
+    margin-left: 3%;
+}
+#titulo-main{
+    text-align: center;
+    color: rgb(13, 141, 13);
+    font-family: 'Monserrat bold'; 
+    font-size: 300%;
+    margin-bottom: 1%;
+}
+.titulos{
+    text-align: center;
+    color: black;
+    font-family: 'Monserrat bold'; 
+    font-size: 300%;
+    margin-bottom: 1%;
+}
+p{
+    font-family: 'Monserrat adapt';
+    text-align: center;
+    color: black;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 125%;
+}
+main{
+    background-color: white;
+}
+.main-img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-top: 1.5%;
+    width: 60%;
+    height: 450px;
+    border-radius: 20px;
+}
+#main-articles{
+    height: 100%;
+    background-color: #3eb4899a;
+}
+#article-cont{
+    display: flex;
+}
+article
+{
+    display: block;
+    background-color: #adebb3;
+    border-radius: 10px;
+    width: 550px;
+    height: 750px;
+    margin: 0 auto;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+.img-art{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+footer{
+    background-color: #222;
+    color: #fff;
+    font-family: 'Monserrat adapt';
+    padding-bottom: 1%;
+}
+#foo-container{ 
+    display: flex;
+} /*Foo-Fighters*/
+.foo-conteudo{
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+}
+#foo-bottom::before{
+    background-color: #444;
+    content:"";
+    display:block;
+    height: 1px;
+    width:100%; /*Mil linhas aqui. Sinceramente, eu não sobreviverei até o fim deste ano*/
+    margin-bottom: 1%;
+}
+#foo-bottom{
+    text-align: center;
+    font-family: 'Monserrat adapt';
+}
+}
+
+/*
+Código original (feito sem pensar na responsividade) se encontra abaixo:
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face{
+    font-family: 'Cinzel bold';
+    src: url(Cinzel-Bold.woff2)  format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Monserrat bold';
+    src: url(Montserrat-Bold.woff2)  format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Monserrat adapt';
+    src: url(Montserrat-VariableFont_wght.woff2)  format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#menu-botao{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.modos-botao{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#menu-aberto{
+    display: none;
+    position: fixed;
+    width: 200px;
+    right: 0;
+    background-color: #eef6b0;
+    height: 100%;
+    z-index: 10;
+}
+#menu-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+    gap: 25px;
+}
+#fecha-menu{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#fecha-menu-img{
+    width: 20%;
+    height: 20%;
+}
+.links-menu{
+    font-family: 'Moserrat adapt';
+    font-size: 150%;
+    text-align: center;
+    color: #222;
+    cursor: pointer;
+}
+#likeA-header{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+#logo{
+    height: 200%;
+}
+#logoEtitulo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    margin-left: 60px;
+    max-width: 300px;
+    color: white;
+    font-family: 'Cinzel bold';
+}
+#likeA-nav{
+    display: flex;
+    gap: 60px;
+    margin-right: 60px;
+}
+.links{
+    color: white;
+    font-family: 'Monserrat adapt';
+    font-size: 120%;
+    cursor: pointer;
+}
+section{
+    background-image: url(main-usina.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#intro-img{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#container-titulo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+#titulo{
+    display: flex;
+    color: white;
+    text-align: center;
+    font-family: 'Cinzel bold';
+    z-index: 2;
+    font-size: 625%;
+}
+span{
+    color: rgb(13, 141, 13);
+    margin-left: 3%;
+}
+#titulo-main{
+    text-align: center;
+    color: rgb(13, 141, 13);
+    font-family: 'Monserrat bold'; 
+    font-size: 300%;
+    margin-bottom: 1%;
+}
+.titulos-art{
+    text-align: center;
+    color: black;
+    font-family: 'Monserrat bold'; 
+    font-size: 300%;
+    margin-bottom: 1%;
+}
+.titulos-foo{
+    text-align: center;
+    color: #4caf50;
+    font-family: 'Monserrat bold'; 
+    font-size: 120%;
+    margin-bottom: 1%;
+}
+p{
+    font-family: 'Monserrat adapt';
+    text-align: center;
+    color: black;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 125%;
+}
+main{
+    background-color: white;
+}
+.main-img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-top: 1.5%;
+    width: 60%;
+    height: 450px;
+    border-radius: 20px;
+}
+#main-articles{
+    height: 100%;
+    background-color: #3eb4899a;
+}
+#article-cont{
+    display: flex;
+}
+article
+{
+    display: block;
+    background-color: #adebb3;
+    border-radius: 10px;
+    width: 550px;
+    height: 750px;
+    margin: 0 auto;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+.img-art{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+footer{
+    background-color: #222;
+    color: #fff;
+    font-family: 'Monserrat adapt';
+    padding-bottom: 1%;
+}   Foo-Fighters
+#foo-container{ 
+    display: flex;
+} 
+.foo-conteudo{
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+}
+#foo-bottom::before{
+    background-color: #444;
+    content:"";
+    display:block;
+    height: 1px;
+    width:100%;
+    margin-bottom: 1%;
+}
+#foo-bottom{
+    text-align: center;
+    font-family: 'Monserrat adapt';
+}
