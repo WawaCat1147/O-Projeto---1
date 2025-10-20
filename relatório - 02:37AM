@@ -1,8 +1,8 @@
 O que falta a ser feito: 
 - Fazer os sites de exemplos das energias.
-- Não é necessário fazer do zero, apenas usar os esqueletos já presentes no main.
-- O que significa que apenas é necessário fazer os textos e achar duas imagens de fundo.
-- Para que o site principal se junte aos emus, é necessário que o meu grupo ( e eu mesmo) adicione a tag "a", para que dessa forma, redirecione o cliente para os meus sites.
-- Não será feito um site em cima da tag "a", com conteúdo nomeado de "Sobre", que se encontra no header do começo de cada site.
-- É necessário fazer o botão que volte o cliente para o começo da página, para os meus sites.
+Não é necessário fazer do zero, apenas usar os esqueletos já presentes no main.
+O que significa que apenas é necessário fazer os textos e achar duas imagens de fundo.
+- Para que o site principal se junte aos meus, é necessário que o meu grupo ( e eu mesmo) adicione a tag "a" nos cards, para que dessa forma, redirecione o cliente para os meus sites.
+- Não será feito um site em cima da tag "a", com conteúdo nomeado de "Sobre", que se encontra no header do começo de cada site? Na verdade, não tenho certeza. !Ver com o time!
+- É necessário fazer o botão que volte o cliente para o começo da página, em meus sites.
 - Falta-se concluir a funcionalidade das múlitplas tags "a" em "LikeA-header", especifiicamente em "LikeA-nav". Os "a" com funcionalidade faltando são: "Sobre", "Contato" e "Exemplos".
